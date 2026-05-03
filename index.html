@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bilal Ali data portfolio workspace for analytics, BI, data engineering, and applied data roles."
+    />
+    <title>Bilal Ali | Data Workspace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="workspace-shell">
+      <aside class="sidebar">
+        <a class="identity" href="#overview" aria-label="Bilal Ali overview">
+          <span class="identity-mark">BA</span>
+          <span>
+            <strong>Bilal Ali</strong>
+            <small>Data Workspace</small>
+          </span>
+        </a>
+
+        <nav class="side-nav" aria-label="Workspace navigation">
+          <a href="#overview" class="active">Overview</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#capability">Capability</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="sidebar-panel">
+          <span class="status-dot"></span>
+          <div>
+            <strong>Open to data roles</strong>
+            <p>Analyst, BI, analytics engineering, data science, ML direction.</p>
+          </div>
+        </div>
+      </aside>
+
+      <div class="workspace-main">
+        <header class="topbar">
+          <div>
+            <p class="crumb">portfolio_database / candidate_overview</p>
+            <h1>Bilal Ali Data Workspace</h1>
+          </div>
+          <div class="topbar-actions">
+            <a href="mailto:bilal.ali2571@gmail.com">Email</a>
+            <a href="https://github.com/BilalAli-01">GitHub</a>
+            <a href="https://linkedin.com/in/bilalali-01">LinkedIn</a>
+          </div>
+        </header>
+
+        <main>
+          <section id="overview" class="workspace-section">
+            <div class="overview-grid">
+              <article class="panel profile-panel">
+                <div class="panel-label">candidate_profile</div>
+                <h2>Data analyst growing into analytics engineering, ML, and data science.</h2>
+                <p>
+                  I build practical data products: SQL analysis, Power BI reports,
+                  repeatable ETL workflows, and web-based tools that solve real
+                  operational problems.
+                </p>
+                <div class="role-lenses" aria-label="Role lenses">
+                  <button class="lens active" data-lens="analyst">Analyst</button>
+                  <button class="lens" data-lens="bi">BI</button>
+                  <button class="lens" data-lens="engineering">Engineering</button>
+                  <button class="lens" data-lens="ml">ML Direction</button>
+                </div>
+              </article>
+
+              <article class="panel query-panel">
+                <div class="panel-label">active_query</div>
+                <pre><code>SELECT project, evidence, stack
+FROM bilal.portfolio
+WHERE role_fit IN ('data', 'bi', 'engineering')
+ORDER BY recruiter_signal DESC;</code></pre>
+              </article>
+            </div>
+
+            <div class="kpi-grid">
+              <article class="kpi-card">
+                <span class="kpi-value" data-count="5">0</span>
+                <p>portfolio projects</p>
+              </article>
+              <article class="kpi-card">
+                <span class="kpi-value">SQL + BI</span>
+                <p>core analytics stack</p>
+              </article>
+              <article class="kpi-card">
+                <span class="kpi-value">ETL</span>
+                <p>repeatable analysis workflows</p>
+              </article>
+              <article class="kpi-card">
+                <span class="kpi-value">DA</span>
+                <p>data analyst experience</p>
+              </article>
+            </div>
+          </section>
+
+          <section id="experience" class="workspace-section">
+            <div class="section-title-row">
+              <div>
+                <p class="crumb">portfolio_database / work_experience</p>
+                <h2>Experience</h2>
+              </div>
+            </div>
+
+            <article class="panel experience-record">
+              <div class="experience-logo">
+                <img src="maple.png" alt="Maple Community Services logo" />
+              </div>
+              <div class="experience-body">
+                <div class="panel-label">primary_data_role</div>
+                <h3>Data Analyst · Maple Community Services</h3>
+                <p>
+                  Data analyst experience in a community services environment,
+                  supporting reporting, operational visibility, data quality, and
+                  decision-making across business and service delivery workflows.
+                </p>
+                <div class="experience-grid" aria-label="Experience highlights">
+                  <div>
+                    <span>Focus</span>
+                    <strong>Reporting and analysis</strong>
+                  </div>
+                  <div>
+                    <span>Context</span>
+                    <strong>Community services operations</strong>
+                  </div>
+                  <div>
+                    <span>Signal</span>
+                    <strong>Real data analyst experience</strong>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <section id="projects" class="workspace-section">
+            <div class="section-title-row">
+              <div>
+                <p class="crumb">portfolio_database / project_inventory</p>
+                <h2>Project Inventory</h2>
+              </div>
+              <div class="filter-group" aria-label="Project filters">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="analytics">Analytics</button>
+                <button class="filter-button" data-filter="bi">BI</button>
+                <button class="filter-button" data-filter="engineering">Engineering</button>
+                <button class="filter-button" data-filter="product">Product</button>
+              </div>
+            </div>
+
+            <div class="project-board">
+              <div class="project-table" role="table" aria-label="Portfolio projects">
+                <div class="project-row table-head" role="row">
+                  <span>Project</span>
+                  <span>Type</span>
+                  <span>Stack</span>
+                  <span>Signal</span>
+                </div>
+
+                <button class="project-row" data-project="fuelcheck" data-category="analytics bi engineering">
+                  <span>
+                    <strong>FuelCheck Price Analysis</strong>
+                    <small>Open-data analytics workflow</small>
+                  </span>
+                  <span class="chip">Analytics</span>
+                  <span>SQL Server, Power BI, Python</span>
+                  <span>Data quality + insight</span>
+                </button>
+
+                <button class="project-row" data-project="dark" data-category="bi analytics">
+                  <span>
+                    <strong>NSW Night-Time Economy Dashboard</strong>
+                    <small>Power BI visualisation concept</small>
+                  </span>
+                  <span class="chip purple">BI</span>
+                  <span>Power BI, KPI design</span>
+                  <span>Executive reporting</span>
+                </button>
+
+                <button class="project-row" data-project="prayer" data-category="engineering product">
+                  <span>
+                    <strong>Prayer Widget</strong>
+                    <small>Desktop data integration app</small>
+                  </span>
+                  <span class="chip blue">Engineering</span>
+                  <span>Electron, React, TypeScript</span>
+                  <span>API merge + packaging</span>
+                </button>
+
+                <button class="project-row" data-project="xlr8" data-category="product">
+                  <span>
+                    <strong>XLR8 Driving School Website</strong>
+                    <small>Private business website</small>
+                  </span>
+                  <span class="chip gold">Product</span>
+                  <span>Web design, deployment</span>
+                  <span>Client-ready site</span>
+                </button>
+
+                <button class="project-row" data-project="splitr" data-category="product engineering">
+                  <span>
+                    <strong>Splitr</strong>
+                    <small>Group cost-splitting web app</small>
+                  </span>
+                  <span class="chip blue">Product</span>
+                  <span>Next.js, Supabase, Vercel</span>
+                  <span>Full-stack workflow</span>
+                </button>
+              </div>
+
+              <aside class="panel project-detail" aria-live="polite">
+                <div class="panel-label">selected_record</div>
+                <img id="project-image" src="Data%20after%20Dark%20Dashboard.png" alt="Selected project preview" />
+                <h3 id="project-title">NSW Night-Time Economy Dashboard</h3>
+                <p id="project-copy">
+                  Power BI dashboard concept for a visualisation specialist role,
+                  combining quarterly KPI cards, benchmark signals, and trend visuals
+                  into a single executive view.
+                </p>
+                <dl class="detail-list">
+                  <div>
+                    <dt>Evidence</dt>
+                    <dd id="project-evidence">KPI design, interactive quarter framing, labelled trend visuals.</dd>
+                  </div>
+                  <div>
+                    <dt>Recruiter Signal</dt>
+                    <dd id="project-signal">Can build readable BI dashboards for decision-makers.</dd>
+                  </div>
+                </dl>
+                <a id="project-link" class="button-link" href="Data%20after%20Dark%20Dashboard.png">Open evidence</a>
+              </aside>
+            </div>
+          </section>
+
+          <section id="capability" class="workspace-section">
+            <div class="section-title-row">
+              <div>
+                <p class="crumb">portfolio_database / capability_model</p>
+                <h2>Capability Matrix</h2>
+              </div>
+            </div>
+
+            <div class="capability-grid">
+              <article class="panel capability-card">
+                <span class="capability-score">01</span>
+                <h3>Analysis</h3>
+                <p>SQL exploration, EDA, validation, segmentation, trend analysis, and insight storytelling.</p>
+                <div class="mini-bars" aria-hidden="true">
+                  <span style="height: 78%"></span>
+                  <span style="height: 64%"></span>
+                  <span style="height: 88%"></span>
+                </div>
+              </article>
+              <article class="panel capability-card">
+                <span class="capability-score">02</span>
+                <h3>Business Intelligence</h3>
+                <p>Power BI dashboard design, KPI framing, visual comparison, and report usability.</p>
+                <div class="mini-bars" aria-hidden="true">
+                  <span style="height: 70%"></span>
+                  <span style="height: 82%"></span>
+                  <span style="height: 74%"></span>
+                </div>
+              </article>
+              <article class="panel capability-card">
+                <span class="capability-score">03</span>
+                <h3>Engineering Direction</h3>
+                <p>Python ETL, structured repos, API integration, repeatable workflows, and deployment.</p>
+                <div class="mini-bars" aria-hidden="true">
+                  <span style="height: 62%"></span>
+                  <span style="height: 76%"></span>
+                  <span style="height: 68%"></span>
+                </div>
+              </article>
+              <article class="panel capability-card">
+                <span class="capability-score">04</span>
+                <h3>ML / Data Science Path</h3>
+                <p>Developing toward model-ready datasets, practical evaluation, statistics, and ML workflows.</p>
+                <div class="mini-bars" aria-hidden="true">
+                  <span style="height: 46%"></span>
+                  <span style="height: 58%"></span>
+                  <span style="height: 52%"></span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section id="resume" class="workspace-section">
+            <div class="resume-grid">
+              <article class="panel">
+                <div class="panel-label">document_control</div>
+                <h2>Resume Files</h2>
+                <p>
+                  The portfolio is data-focused, but both resume variants stay available
+                  for recruiters who want a traditional document.
+                </p>
+              </article>
+              <a class="doc-card" href="Bilal_Ali_Resume%20(DA).pdf">
+                <span>Primary document</span>
+                <strong>Data Analyst Resume</strong>
+                <small>PDF</small>
+              </a>
+              <a class="doc-card" href="Bilal_Ali_Resume%20(BA).pdf">
+                <span>Supporting document</span>
+                <strong>Business Analyst Resume</strong>
+                <small>PDF</small>
+              </a>
+            </div>
+          </section>
+        </main>
+
+        <footer id="contact" class="footer panel">
+          <div>
+            <div class="panel-label">contact_index</div>
+            <h2>Contact</h2>
+          </div>
+          <div class="footer-actions">
+            <a href="mailto:bilal.ali2571@gmail.com">bilal.ali2571@gmail.com</a>
+            <a href="https://github.com/BilalAli-01">github.com/BilalAli-01</a>
+            <a href="https://linkedin.com/in/bilalali-01">linkedin.com/in/bilalali-01</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
